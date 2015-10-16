@@ -2,21 +2,13 @@ eval "puts to_s"
 
 # ---------------------
 
-class Binder
+class Cook
   def get_binding
     binding
   end
 end
 
-eval "puts to_s", Binder.new.get_binding
-
-# ---------------------
-
-eval "raise to_s", binding
-
-# ---------------------
-
-eval "raise to_s", binding, "binder.rb", 1
+eval "puts to_s", Cook.new.get_binding
 
 # ---------------------
 
@@ -39,7 +31,5 @@ load "cookery/recipe.rb"
 
 require File.join(dir, "cookery/recipe.rb")
 require "cookery/recipe"
-
-# ---------------------
 
 p $LOADED_FEATURES.last
