@@ -1,3 +1,6 @@
+puts to_s
+# => main
+
 eval "puts to_s"
 # => main
 
