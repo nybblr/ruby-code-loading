@@ -34,11 +34,18 @@ load "cookery/recipe.rb"
 
 # ---------------------
 
+$LOAD_PATH.unshift(dir)
+
+require "cookery/recipe"
+# => Loaded Cookery::Recipe class!
+
+p $LOADED_FEATURES.last
+# => "/home/nybblr/cookery/recipe.rb"
+
+# ---------------------
+
 require File.join(dir, "cookery/recipe.rb")
 # => Loaded Cookery::Recipe class!
 
 require "cookery/recipe"
 # Eerie silence...
-
-p $LOADED_FEATURES.last
-# => "/home/nybblr/cookery/recipe.rb"
