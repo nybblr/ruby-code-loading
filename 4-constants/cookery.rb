@@ -1,0 +1,3 @@
+module Cookery
+
+end
