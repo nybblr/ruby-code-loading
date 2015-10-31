@@ -1,3 +1,5 @@
+puts "Loaded Cookery::Ingredient class!"
+
 require 'cookery/recipe'
 
 module Cookery
