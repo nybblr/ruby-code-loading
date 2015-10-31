@@ -1,21 +1,12 @@
 ENV["RAILS_ENV"] ||= 'test'
 
-# Stub out common Rails methods
 if !Object.const_defined?(:Rails)
   require 'active_support/all'
 
-  Rails = Module.new do
-    def self.cache
-      @store ||= ActiveSupport::Cache::NullStore.new
-    end
-
-    def self.root
-      @root ||= File.expand_path('../..', __FILE__)
-    end
-  end
+  root = File.expand_path('../..', __FILE__)
 
   ActiveSupport::Dependencies.autoload_paths +=
-    Dir["#{Rails.root}/app/*/"]
+    Dir["#{root}/app/*/"]
 end
 
 # General config
