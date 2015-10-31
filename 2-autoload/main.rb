@@ -30,7 +30,7 @@ Cookery::Recipe
 p $LOADED_FEATURES.last
 # => "/home/nybblr/cookery/recipe.rb"
 require 'cookery/recipe'
-# => "*Eerie silence…*"
+# => *Eerie silence…*
 
 # ---------------------
 
@@ -46,6 +46,6 @@ Cookery::Recipe
 p $LOADED_FEATURES.last
 # => "/home/nybblr/cookery/recipe.rb"
 require 'cookery/recipe'
-# => "*Eerie silence…*"
+# => *Eerie silence…*
 
 # ActiveSupport::Dependencies.mechanism doesn't matter, always uses require!
