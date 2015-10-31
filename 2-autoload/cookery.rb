@@ -1,5 +1,5 @@
 module Cookery
   # extend ActiveSupport::Autoload
   #
-  # autoload :recipe
+  # autoload :Recipe
 end
