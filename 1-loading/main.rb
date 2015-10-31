@@ -51,4 +51,4 @@ require File.join(dir, "cookery/recipe.rb")
 # => Loaded Cookery::Recipe class!
 
 require "cookery/recipe"
-# Eerie silence...
+# *Eerie silence...*
