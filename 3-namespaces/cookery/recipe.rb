@@ -1,7 +1,5 @@
-puts "Loaded Cookery::Recipe class!"
+puts "Loaded ::Recipe class!"
 
-module Cookery
-  class Recipe
+class Recipe
 
-  end
 end
